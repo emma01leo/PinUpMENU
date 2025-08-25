@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menù di Oggi </title>
+  <title>Menù di Oggi</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -32,9 +32,7 @@
       color: #222;
     }
 
-    .section {
-      margin-bottom: 20px;
-    }
+    .section { margin-bottom: 20px; }
 
     .section h2 {
       margin-top: 0;
@@ -42,11 +40,7 @@
       text-align: center;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+    ul { list-style: none; padding: 0; margin: 0; }
 
     li {
       padding: 12px;
@@ -63,9 +57,9 @@
       border-radius: 8px;
       border: 1px solid #ffeeba;
     }
-    .special .bold-part { 
-        font-weight: 600;
-    }
+
+    .special .bold-part { font-weight: 600; }
+
     .offers {
       margin: 40px auto;
       padding: 20px;
@@ -75,13 +69,10 @@
       border-radius: 12px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
       font-family: "Segoe UI", Arial, sans-serif;
-    }
-
-    .offers {
       text-align: center;
       font-size: 24px;
       margin-bottom: 20px;
-      color: #d7d7d7;
+      color: #000; 
     }
 
     .offer {
@@ -94,14 +85,28 @@
       font-size: 18px;
       transition: transform 0.2s ease;
     }
-    .price {
+
+    .price { font-weight: bold; color: #000000; }
+
+    .lang-toggle {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #eaeaea;
+      border-radius: 5px;
+      cursor: pointer;
       font-weight: bold;
-      color: #000000;
+      margin-bottom: 10px;
     }
 
-    .lang-btn {
+
+    .lang-list {
+      display: none;
+      margin-top: 5px;
+    }
+
+    .lang-list span {
       display: inline-block;
-      margin: 0 5px;
+      margin: 3px 5px;
       padding: 3px 6px;
       border-radius: 4px;
       background-color: #eaeaea;
@@ -110,7 +115,8 @@
       font-size: 12px;
       transition: background-color 0.2s;
     }
-    .lang-btn:hover {
+
+    .lang-list span:hover {
       background-color: #b22222;
       color: #fff;
     }
@@ -118,112 +124,126 @@
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <div style="text-align:center; margin-bottom:10px;">
-      <span class="lang-btn" data-lang="it">IT</span>
-      <span class="lang-btn" data-lang="en">ENG</span>
-      <span class="lang-btn" data-lang="fr">FR</span>
-      <span class="lang-btn" data-lang="zh-CN">CN</span>
-      <span class="lang-btn" data-lang="ar">AR</span>
-      <span class="lang-btn" data-lang="sq">AL</span>
-      <span class="lang-btn" data-lang="ro">RO</span>
-      <span class="lang-btn" data-lang="ur">PK</span>
-      <span class="lang-btn" data-lang="bn">BD</span>
-    </div>
-
-    <h1>Menù di Oggi 01/09/25</h1>
-    <p style="text-align: center; font-size: 20px; margin-top: -10px;">
-      Acqua e Caffé compreso</p> 
-    
-    <div class="section">
-      <h2>PRIMI</h2> 
-      <ul>
-        <li>Riso freddo</li>
-        <li>Pasta al ragù di salsiccia (1, 9, 12)</li>
-        <li>Pasta con crema di ricotta e grana, con noci (1, 6, 7, 8 NOCI)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>SECONDI</h2>
-      <ul>
-        <li class="special">
-        Piastra A scelta tra: <span class="bold-part">Petto di pollo* / Coppa di Maiale <span style="font-size: 18xp; vertical-align: middle;">&#x1F437;</span> / Salsicce <span style="font-size: 18xp; vertical-align: middle;">&#x1F437;</span> / Formaggio</span>(3, 7)[in tutti i prodotti fatti alla piastra possibili tracce di uova e latticini 3,7]</li>
-        <li>Carpaccio di carne salada e rucola (PIATTO FREDDO)</li>
-        <li>Filetto di pesce persico (1, 4)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>CONTORNI</h2>
-      <ul>
-        <li>Zucchine gratinate</li>
-        <li>Crocchette di patate* (1)</li>
-        <li>Mista (lattuga, radicchio di Chioggia, carote, pomodori)</li>
-        <li class="special">
-        <span class="bold-part">Dolce:</span>  Semifreddo Nocciola*  (1, 3, 5, 6, 7, 8)</li>
-      </ul>
-    </div>
-
-    <div class="offers">
-      <h2>
-        <div class="offer">
-          <span>Menù completo</span>
-          <span class="price">14€</span>
-        </div>
-        <div class="offer">
-          <span>Primo + Contorno</span>
-          <span class="price">11€</span>
-        </div>
-        <div class="offer">
-          <span>Primo + Secondo</span>
-          <span class="price">13€</span>
-        </div>
-        <div class="offer">
-          <span>Secondo + Contorno</span>
-          <span class="price">12€</span>
-        </div>
-        <div class="offer">
-          <span>Dolce</span>
-          <span class="price">4.50€</span>
-        </div>
-      </h2>
-    </div>
-
-    <div class="allergeni">
-      <strong>Lista allergeni:</strong><br>
-      1 Glutine, 2 Crostacei, 3 Uova, 4 Pesce, 5 Arachidi, 6 Soia, 7 Latte, 8 Frutta a guscio,  
-      9 Sedano, 10 Senape, 11 Semi di sesamo, 12 Solfiti, 13 Lupini, 14 Molluschi.  
-      <br><br>
-      * In mancanza del prodotto fresco, si utilizzerà prodotto surgelato o congelato
+  <div style="text-align:center;">
+    <div class="lang-toggle">🌐 Seleziona linga</div>
+    <div class="lang-list">
+      <span data-lang="it">IT</span>
+      <span data-lang="en">ENG</span>
+      <span data-lang="fr">FR</span>
+      <span data-lang="zh-CN">CN</span>
+      <span data-lang="ar">AR</span>
+      <span data-lang="sq">AL</span>
+      <span data-lang="ro">RO</span>
+      <span data-lang="ur">PK</span>
+      <span data-lang="bn">BD</span>
     </div>
   </div>
 
-  <div id="google_translate_element" style="display:none;"></div>
-  <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'it',
-      includedLanguages: 'it,en,fr,zh-CN,ar,sq,ro,ur,bn',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-  }
+  <h1>Menù di Oggi 01/09/25</h1>
+  <p style="text-align: center; font-size: 20px; margin-top: -10px;">Acqua e Caffé compreso</p> 
 
-  document.addEventListener("DOMContentLoaded", function() {
-      const buttons = document.querySelectorAll('.lang-btn');
-      buttons.forEach(btn => {
-          btn.addEventListener('click', () => {
-              const lang = btn.dataset.lang;
-              const sel = document.querySelector('.goog-te-combo');
-              if(sel) sel.value = lang; 
-              sel.dispatchEvent(new Event('change'));
-          });
-      });
+  <div class="section">
+    <h2>PRIMI</h2>
+    <ul>
+      <li>Riso freddo</li>
+      <li>Pasta al ragù di salsiccia (1, 9, 12)</li>
+      <li>Pasta con crema di ricotta e grana, con noci (1, 6, 7, 8 NOCI)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>SECONDI</h2>
+    <ul>
+      <li class="special">
+        Piastra A scelta tra: <span class="bold-part">Petto di pollo* / Coppa di Maiale <span style="font-size: 18xp; vertical-align: middle;">&#x1F437;</span> / Salsicce <span style="font-size: 18xp; vertical-align: middle;">&#x1F437;</span> / Formaggio</span>(3, 7)[in tutti i prodotti fatti alla piastra possibili tracce di uova e latticini 3,7]
+      </li>
+      <li>Carpaccio di carne salada e rucola (PIATTO FREDDO)</li>
+      <li>Filetto di pesce persico (1, 4)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>CONTORNI</h2>
+    <ul>
+      <li>Zucchine gratinate</li>
+      <li>Crocchette di patate* (1)</li>
+      <li>Mista (lattuga, radicchio di Chioggia, carote, pomodori)</li>
+      <li class="special">
+        <span class="bold-part">Dolce:</span>  Semifreddo Nocciola*  (1, 3, 5, 6, 7, 8)
+      </li>
+    </ul>
+  </div>
+
+  <div class="offers">
+    <div class="offer">
+      <span>Menù completo</span>
+      <span class="price">14€</span>
+    </div>
+    <div class="offer">
+      <span>Primo + Contorno</span>
+      <span class="price">11€</span>
+    </div>
+    <div class="offer">
+      <span>Primo + Secondo</span>
+      <span class="price">13€</span>
+    </div>
+    <div class="offer">
+      <span>Secondo + Contorno</span>
+      <span class="price">12€</span>
+    </div>
+    <div class="offer">
+      <span>Dolce</span>
+      <span class="price">4.50€</span>
+    </div>
+  </div>
+
+  <div class="allergeni">
+    <strong>Lista allergeni:</strong><br>
+    1 Glutine, 2 Crostacei, 3 Uova, 4 Pesce, 5 Arachidi, 6 Soia, 7 Latte, 8 Frutta a guscio,  
+    9 Sedano, 10 Senape, 11 Semi di sesamo, 12 Solfiti, 13 Lupini, 14 Molluschi.  
+    <br><br>
+    * In mancanza del prodotto fresco, si utilizzerà prodotto surgelato o congelato
+  </div>
+
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'it',
+    includedLanguages: 'it,en,fr,zh-CN,ar,sq,ro,ur,bn',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector('.lang-toggle');
+  const list = document.querySelector('.lang-list');
+  toggle.addEventListener('click', () => {
+    list.style.display = list.style.display === 'inline-block' ? 'none' : 'inline-block';
   });
-  </script>
 
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  const buttons = document.querySelectorAll('.lang-list span');
+  function changeLanguage(lang) {
+    const sel = document.querySelector('.goog-te-combo');
+    if(sel) {
+      sel.value = lang;
+      sel.dispatchEvent(new Event('change'));
+    } else {
+      setTimeout(() => changeLanguage(lang), 500);
+    }
+  }
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => changeLanguage(btn.dataset.lang));
+  });
+});
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
