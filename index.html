@@ -28,15 +28,15 @@ h1 { text-align: center; margin-bottom: 25px; color: #222; }
 .section { margin-bottom: 20px; }
 .section h2 { margin-top: 0; color: #b22222; text-align: center; }
 ul { list-style: none; padding: 0; margin: 0; }
-li { padding: 12px; margin-bottom: 10px; background: #eaeaea; border-radius: 8px; }
+li { padding: 12px; margin-bottom: 10px; background: #faf4e5; border-radius: 8px; }
 .allergeni { margin-top: 25px; font-size: 0.9em; background: #fff3cd; padding: 12px; border-radius: 8px; border: 1px solid #ffeeba; }
 .special .bold-part { font-weight: 600; }
 .offers {
   margin: 40px auto;
   padding: 20px;
   max-width: 450px;
-  background: #fff8f0;
-  border: 2px solid #b9b5b2;
+  background: #cbb38f;
+  border: 2px solid #957d6b;
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
   font-family: "Segoe UI", Arial, sans-serif;
@@ -71,7 +71,7 @@ li { padding: 12px; margin-bottom: 10px; background: #eaeaea; border-radius: 8px
   margin: 3px 5px;
   padding: 3px 6px;
   border-radius: 4px;
-  background-color: #eaeaea;
+  background-color: #d9d9d0;
   cursor: pointer;
   font-weight: bold;
   font-size: 12px;
@@ -101,28 +101,28 @@ li { padding: 12px; margin-bottom: 10px; background: #eaeaea; border-radius: 8px
 <p data-key="water_coffee" style="text-align: center; font-size: 20px; margin-top: -10px;">Acqua e Caffé compreso</p> 
 
 <div class="section">
-<h2 data-key="primis">PRIMI</h2>
+<h2 data-key="primis">🥟PRIMI</h2>
 <ul>
   <li data-key="riso_freddo">Gnocchi di patate al ragù di manzo (1, 3, 6, 7, 9)</li>
   <li data-key="pasta_ragu">Pasta con pomodoro e olive nere (1, 6, 9) (le olive possono contenere noccioli o parti di essi)</li>
-  <li data-key="pasta_ricotta">🐷Pasta alla carbonara (1, 3, 6, 7)</li>
+  <li data-key="pasta_ricotta">Pasta alla carbonara (1, 3, 6, 7)  &#x1F437;</li>
 </ul>
 </div>
 
 <div class="section">
-<h2 data-key="secondis">SECONDI</h2>
+<h2 data-key="secondis">🍖SECONDI</h2>
 <ul>
   <li class="special" data-key="piastra">
     <span class="bold-part">Piastra A scelta tra:</span> Petto di pollo* / 🐷Coppa di maiale/ 🐷Salsicce / Formaggio (3,7)[possibili tracce di uova e latticini]
   </li>
-  <li data-key="carpaccio">🐷Porchetta alla piastra con senape (10, tracce 3, 7)</li>
+  <li data-key="carpaccio"><span class="bold-part">🐷Porchetta alla piastra con senape (10, tracce 3, 7)</span> </li>
   <li data-key="filetto">Strudel con tacchino, funghi e mozzarella (1, 3, 6, 7) </li>
 
 </ul>
 </div>
 
 <div class="section">
-<h2 data-key="contorni">CONTORNI</h2>
+<h2 data-key="contorni">🍟CONTORNI</h2>
 <ul>
   <li data-key="zucchine">Patatine fritte (1)  </li>
   <li data-key="crocchette">Zucchine trifolate </li>
@@ -167,15 +167,15 @@ const translations = {
   en: {
     menu_today: "Today's Menu 24/09/25",
     water_coffee: "Water and Coffee included",
-    primis: "FIRST COURSES",
+    primis: "🥟FIRST COURSES",
     riso_freddo: "Potato gnocchi with beef ragù (1,3,6,7,9)",
     pasta_ragu: "Pasta with tomato and black olives (1,6,9) (olives may contain pits or fragments)",
     pasta_ricotta: "🐷 Pasta alla carbonara (1,3,6,7)",
-    secondis: "MAIN COURSES",
-    piastra: "Grill Choice: Chicken / Pork🐷/ Sausages🐷 / Cheese (may contain eggs & milk)",
+    secondis: "🍖MAIN COURSES",
+    piastra: "Grill Choice:Chicken / Pork🐷/ Sausages🐷 / Cheese (may contain eggs & milk)",
     carpaccio: "🐷 Grilled porchetta with mustard (10, traces of 3,7)",
     filetto: "Strudel with turkey, mushrooms and mozzarella (1,3,6,7)",
-    contorni: "SIDES",
+    contorni: "🍟SIDES",
     zucchine: "French fries (1)",
     crocchette: "Sautéed zucchini",
     mista: "Mixed salad (lettuce, Chioggia radicchio, cucumbers, carrots, tomatoes)",
@@ -190,15 +190,15 @@ const translations = {
   it: {
   menu_today: "Menù di Oggi 24/09/25",
   water_coffee: "Acqua e Caffé compreso",
-  primis: "PRIMI",
+  primis: "🥟PRIMI",
   riso_freddo: "Gnocchi di patate al ragù di manzo (1,3,6,7,9)",
   pasta_ragu: "Pasta con pomodoro e olive nere (1,6,9) (le olive possono contenere noccioli o parti di essi)",
   pasta_ricotta: "🐷Pasta alla carbonara (1,3,6,7)",
-  secondis: "SECONDI",
+  secondis: "🍖SECONDI",
   piastra: "Piastra A scelta tra: Petto di pollo* / Coppa di Maiale🐷 / Salsicce🐷 / Formaggio (3,7)[possibili tracce di uova e latticini]",
   carpaccio: "🐷Porchetta alla piastra con senape (10, tracce di 3,7)",
   filetto: "Strudel con tacchino, funghi e mozzarella (1,3,6,7)",
-  contorni: "CONTORNI",
+  contorni: "🍟CONTORNI",
   zucchine: "Patatine fritte (1)",
   crocchette: "Zucchine trifolate",
   mista: "Mista (lattuga, radicchio di Chioggia, carote, pomodori, cetrioli)",
@@ -214,15 +214,15 @@ const translations = {
   ar: {
     menu_today: "قائمة اليوم24/09/25",
     water_coffee: "الماء والقهوة مشمولة",
-    primis: "المقبلات",
+    primis: "المقبلات🥟",
     riso_freddo: "نوكي البطاطا بصلصة راجو لحم البقر (1,3,6,7,9)",
     pasta_ragu: "باستا بالطماطم والزيتون الأسود (1,6,9) (قد تحتوي الزيتون على نوى أو أجزاء منها)",
     pasta_ricotta: "🐷 باستا ألا كاربونارا (1,3,6,7)",
-    secondis: "الأطباق الرئيسية",
+    secondis: "الأطباق الرئيسية🍖",
     piastra: "اختيار على الشواية: دجاج / لحم خنزير🐷/ سجق🐷/ جبن (قد تحتوي على بيض وحليب)",
     carpaccio: "🐷 بوركيتا مشوية مع خردل (10، آثار 3،7)",
     filetto: "ستروديل مع ديك رومي، فطر وموزاريلا (1,3,6,7)",
-    contorni: "الأطباق الجانبية",
+    contorni: "الأطباق الجانبية🍟",
     zucchine: "بطاطا مقلية (1)",
     crocchette: "كوسة مطبوخة مع الثوم والبقدونس",
     mista: "سلطة مشكلة (خس، راديكيو كيودجا، جزر، طماطم، خيار)",
@@ -237,15 +237,15 @@ const translations = {
  de: {
   menu_today: "Heutiges Menü 24/09/25",
  water_coffee: "Wasser und Kaffee inklusive",
- primis: "VORSPEISEN",
+ primis: "🥟VORSPEISEN",
  riso_freddo: "Kartoffelgnocchi mit Rinderragù (1,3,6,7,9)",
  pasta_ragu: "Pasta mit Tomaten und schwarzen Oliven (1,6,9) (Oliven können Kerne oder Stücke enthalten)",
  pasta_ricotta: "🐷Pasta alla Carbonara (1,3,6,7)",
- secondis: "HAUPTGERICHTE",
+ secondis: "🍖HAUPTGERICHTE",
  piastra: "Grillwahl: Hähnchen / Schwein🐷/ Würste🐷/ Käse (kann Eier & Milch enthalten)",
  carpaccio: "🐷Gegrillte Porchetta mit Senf (10, Spuren von 3,7)",
  filetto: "Strudel mit Pute, Pilzen und Mozzarella (1,3,6,7)",
- contorni: "Beilagen",
+ contorni: "🍟Beilagen",
  zucchine: "Pommes frites (1)",
  crocchette: "Zucchini in der Pfanne geschwenkt",
  mista: " Gemischter Salat (Kopfsalat, Chioggia-Radicchio, Gurken, Karotten, Tomaten)",
@@ -259,15 +259,15 @@ const translations = {
 sq: {
   menu_today: "Menyja e Sotme 24/09/25",
   water_coffee: "Ujë dhe Kafe të përfshira",
-  primis: "Pjatë e parë",
+  primis: "🥟Pjatë e parë",
   riso_freddo: "Gnocchi patatesh me ragù viçi (1,3,6,7,9)",
   pasta_ragu: "Makarona me domate dhe ullinj të zinj (1,6,9) (ullinjtë mund të përmbajnë bërthama ose pjesë të tyre)",
   pasta_ricotta: "🐷Makarona alla carbonara (1,3,6,7)",
-  secondis: "Pjatë e dytë",
+  secondis: "🍖Pjatë e dytë",
   piastra: "Zgjedhje në Grill: Pulë / Mish derri🐷 / Salsiçe🐷 / Djathë (mund të përmbajë vezë dhe qumësht)",
   carpaccio: "🐷Porchetta e pjekur në zgarë me mustardë (10, gjurmë të 3,7)",
   filetto: "Strudel me gjeldet, kërpudha dhe mocarela (1,3,6,7)",
-  contorni: "SHTESA",
+  contorni: "🍟SHTESA",
   zucchine: "Patate të skuqura (1)",
   crocchette: "Kunguj të skuqur me hudhër e majdanoz",
   mista: "Sallatë mikse (marule, radikio nga Chioggia, karrota, domate, kastravec)",
@@ -282,15 +282,15 @@ sq: {
 ro: {
   menu_today: "Meniul Zilei 24/09/25",
   water_coffee: "Apă și cafea incluse",
-  primis: "APERITIVE",
+  primis: "🥟APERITIVE",
   riso_freddo: "Gnocchi de cartofi cu ragù de vită (1,3,6,7,9)",
   pasta_ragu: "Paste cu roșii și măsline negre (1,6,9) (măslinele pot conține sâmburi sau fragmente)",
   pasta_ricotta: "🐷Paste alla carbonara (1,3,6,7)",
-  secondis: "FELURI PRINCIPALE",
+  secondis: "🍖FELURI PRINCIPALE",
   piastra: "Grătar la alegere: Pui / Porc🐷/ Cârnați🐷/ Brânză (poate conține ou și lapte)",
   carpaccio: "🐷Porchetta la grătar cu muștar (10, urme de 3,7)",
   filetto: "Strudel cu curcan, ciuperci și mozzarella (1,3,6,7)",
-  contorni: "GARNITURI",
+  contorni: "🍟GARNITURI",
   zucchine: "Cartofi prăjiți (1)",
   crocchette: "Dovlecei sotați",
   mista: "Salată mixtă (salată verde, radicchio de Chioggia, morcovi, roșii, castraveți)",
@@ -305,15 +305,15 @@ ro: {
 bn: {
   "menu_today": "আজকের মেনু 24/09/25",
   "water_coffee": "পানি এবং কফি অন্তর্ভুক্ত",
-  "primis": "প্রথম পদ",
+  "primis": "🥟প্রথম পদ",
   "riso_freddo": "আলুর গ্নক্কি গরুর রাগু সহ (1,3,6,7,9)",
   "pasta_ragu": "টমেটো এবং কালো জলপাই সহ পাস্তা (1,6,9) (জলপাইতে বিচি বা টুকরা থাকতে পারে)",
   "pasta_ricotta": "🐷পাস্তা আল্লা কার্বনারা (1,3,6,7)",
-  "secondis": "প্রধান খাবার",
+  "secondis": "🍖প্রধান খাবার",
   "piastra": "গ্রিল পছন্দ: মুরগি / শূকর🐷/ সসেজ🐷 / চিজ (ডিম এবং দুধ থাকতে পারে)",
   "carpaccio": "🐷গ্রিল করা পরকেত্তা সরিষা সহ (10, 3,7 এর চিহ্ন থাকতে পারে)",
   "filetto": "স্ট্রুডেল টার্কি, মাশরুম এবং মোজারেলা সহ (1,3,6,7)",
-  "contorni": "সেদ্ধ সবুজ বিনস*",
+  "contorni": "🍟সেদ্ধ সবুজ বিনস*",
   "zucchine": "ফ্রেঞ্চ ফ্রাই (1)",
   "crocchette": "ভাজা জুচিনি",
   "mista": "মিক্সড সালাদ (লেটুস, কিওগিয়া রাডিকিও, শসা, গাজর, টমেটো)",
@@ -347,6 +347,7 @@ document.querySelectorAll('.lang-list span').forEach(btn => {
 
 </body>
 </html>
+
 
 
 
