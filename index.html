@@ -126,7 +126,7 @@ li { padding: 12px; margin-bottom: 10px; background: #faf4e5; border-radius: 8px
 <ul>
   <li data-key="zucchine">Radicchio di Treviso alla piastra </li>
   <li data-key="crocchette">🐷Fagioli* in umido con pancetta (9)</li>
-  <li data-key="crocchette">🐷Tegoline* saltate con pancetta e speck</li>
+  <li data-key="saltate">🐷Tegoline* saltate con pancetta e speck</li>
   <li data-key="mista">Mista (lattuga, radicchio di Chioggia, carote, cappucci)</li>
 </ul>
 </div>
@@ -166,21 +166,22 @@ li { padding: 12px; margin-bottom: 10px; background: #faf4e5; border-radius: 8px
 <script>
 const translations = {
   en: {
-    menu_today: "Today's Menu 29/10/25",
+    menu_today: "Today's Menu 31/10/25",
     water_coffee: "💧Water and ☕Coffee included",
     primis: "🥟FIRST COURSES",
-    riso_freddo: "Tortelloni with beef ragù (1,3,6,7,9)",
-    pasta_ragu: "Crespella (crêpe) with spinach and ricotta (1,3,6,7)",
-    pasta_ricotta: "Pasta with tomato, basil, and mozzarella (1,6,7,9)",
+    riso_freddo: "🐷 Pasta “alla boscaiola” (1,6,7) (with cream, cooked ham, peas, and mushrooms*)*",
+    pasta_ragu: "🐷 Pasta with spicy cold cuts ragù (1,6,8 PISTACHIO,9,12)",
+    pasta_ricotta: "Gnocchi with calamari* and cherry tomatoes (1,3,4,6,12,14)",
   
     secondis: "🍖MAIN COURSES",
     piastra: "Grill Choice:Chicken / Pork🐷/ Sausages🐷 / Cheese (may contain eggs & milk)",
-    carpaccio: "Braised chicken thigh (9)",
-    filetto: "Strudel with turkey, vegetables, and mozzarella (1,3,6,7)",
+    carpaccio: "🐷 Mixed meat skewers (3,7)",
+    filetto: "Oven-baked perch fillet* (1,4)",
     
     contorni: "🍟SIDES",
-    zucchine: "Oven-baked potatoes",
-    crocchette: "Peas*",
+    zucchine: "Grilled Treviso radicchio",
+    crocchette: " 🐷 Stewed beans with bacon (9)",
+    crocchette: "🐷 Green beans sautéed with bacon and speck",
     mista: "Mixed salad (lettuce, Chioggia red chicory, carrots, tomatoes, cabbage)",
     menu_completo: "Full Menu",
     primo_contorno: "First + Side",
@@ -191,21 +192,22 @@ const translations = {
 
    },
   it: {
-  menu_today: "Menù di Oggi 29/10/25",
+  menu_today: "Menù di Oggi 31/10/25",
   water_coffee: "💧 Acqua e ☕ Caffé compreso",
   primis: "🥟PRIMI",
-  riso_freddo: "Tortelloni al ragù di manzo (1,3,6,7,9)",
-  pasta_ragu: "Crespella con spinaci e ricotta (1,3,6,7)",
-  pasta_ricotta: "Pomodoro, basilico e mozzarella (1,6,7,9)",
+  riso_freddo: "🐷 Pasta alla boscaiola (1,6,7) (con panna, prosciutto cotto, piselli, funghi*)*",
+  pasta_ragu: "🐷 Pasta con ragù di affettati piccantino (1,6,8 PISTACCHIO,9,12)",
+  pasta_ricotta: "Gnocchi con calamari* e pomodorini (1,3,4,6,12,14)",
 
   secondis: "🍖SECONDI",
   piastra: "Piastra A scelta tra: Petto di pollo* / Coppa di Maiale🐷 / Salsicce🐷 / Formaggio (3,7)[possibili tracce di uova e latticini]",
-  carpaccio: "Sovracoscia di pollo in umido (9)",
-  filetto: "Strudel con tacchino, verdure e mozzarella (1,3,6,7)",
+  carpaccio: "🐷 Spiedini di carne mista (3,7)",
+  filetto: "Filetto di pesce persico* al forno (1,4)",
   
   contorni: "🍟CONTORNI",
-  zucchine: "Patate al forno",
-  crocchette: "Piselli*",
+  zucchine: "Radicchio di Treviso alla piastra",
+  crocchette: "🐷 Fagioli* in umido con pancetta (9)",
+  saltate: "🐷 Tegoline* saltate con pancetta e speck",
   mista: "Mista (lattuga, radicchio rosso di Chioggia, carote, pomodori, cavolo)",
   
   menu_completo: "Menù completo",
@@ -217,21 +219,22 @@ const translations = {
   
 },
   ar: {
-    menu_today: "29/10/25",
+    menu_today: "31/10/25",
     water_coffee: "☕️ يشمل الماء 💧و القهوة",
     primis: "المقبلات🥟",
-    riso_freddo: " تورتيلّوني محشو بصلصة راجو لحم بقري (1،3،6،7،9",
-    pasta_ragu: "كريب محشو بالسبانخ والريكوتا (1،3،6،7)",
-    pasta_ricotta: "معكرونة بالطماطم والريحان والموتزاريلا (1،6،7،9",
+    riso_freddo: "🐷 معكرونة “بوسكايولا” (1،6،7) (مع كريمة، لحم خنزير مطهو، بازيلاء وفطر*)",
+    pasta_ragu: " 🐷 معكرونة بصلصة راجو من اللحوم الباردة الحارة (1،6،8 فستق،9،12",
+    pasta_ricotta: " نوكي مع حبار* وطماطم كرزية (1،3،4،6،12،14",
     
     secondis: "الأطباق الرئيسية🍖",
     piastra: "اختيار على الشواية: دجاج / لحم خنزير🐷/ سجق🐷/ جبن (قد تحتوي على بيض وحليب)",
-    carpaccio: "فخذ دجاج مطهو ببطء (9",
-    filetto: "فطيرة سترودل محشوة بديك رومي وخضار وموتزاريلا (1،3،6،7 ",
+    carpaccio: " 🐷 أسياخ لحم مشكل (3،7",
+    filetto: "فيليه سمك بيرش* بالفرن (1،4",
    
     contorni: "الأطباق الجانبية🍟",
-    zucchine: "بطاطاس بالفرن",
-    crocchette: " بزلاء*",
+    zucchine: "شيكوريا تريفيسو مشوية",
+    crocchette: " بزلاء🐷 فاصوليا مطهية مع لحم مقدد (9",
+    saltate: " 🐷 فاصوليا خضراء مقلية مع لحم مقدد وسبك",
     mista: "سلطة مشكلة (خس، هندباء حمراء من كيودجا، جزر، طماطم، ملفوف)",
   
     menu_completo: "القائمة الكاملة",
@@ -242,21 +245,22 @@ const translations = {
     allergens: "المواد المثيرة للحساسية: 1 جلوتين, 2 قشريات, 3 بيض, 4 سمك, 5 فستق, 6 صويا, 7 حليب, 8 مكسرات, 9 كرفس, 10 خردل, 11 سمسم, 12 كبريتات, 13 لوبين, 14 رخويات"
   },
  de: {
-  menu_today: "Heutiges Menü 29/10/25",
+  menu_today: "Heutiges Menü 31/10/25",
  water_coffee: "💧 Wasser und ☕ Kaffee inbegriffen",
  primis: "🥟VORSPEISEN",
- riso_freddo: " Tortelloni mit Rinderragù (1,3,6,7,9)",
- pasta_ragu: "Crêpe mit Spinat und Ricotta (1,3,6,7)",
- pasta_ricotta: " Pasta mit Tomaten, Basilikum und Mozzarella (1,6,7,9)",
+ riso_freddo: " 🐷 Pasta „alla Boscaiola“ (1,6,7) (mit Sahne, gekochtem Schinken, Erbsen und Pilzen*)*",
+ pasta_ragu: "🐷 Pasta mit würzigem Aufschnitt-Ragù (1,6,8 PISTAZIEN,9,12)",
+ pasta_ricotta: " Gnocchi mit Calamari* und Kirschtomaten (1,3,4,6,12,14)",
 
  secondis: "🍖HAUPTGERICHTE",
  piastra: "Grillwahl: Hähnchen / Schwein🐷/ Würste🐷/ Käse (kann Eier & Milch enthalten)",
- carpaccio: " Geschmorte Hähnchenkeule (9)",
- filetto: " Strudel mit Pute, Gemüse und Mozzarella (1,3,6,7)",
+ carpaccio: " 🐷 Gemischte Fleischspieße (3,7)",
+ filetto: " Gebackenes Barschfilet* (1,4)",
 
  contorni: "🍟Beilagen",
- zucchine: "Ofenkartoffeln",
- crocchette: " Erbsen*",
+ zucchine: "Gegrillter Treviso-Radicchio",
+ crocchette: " 🐷 Geschmorte Bohnen mit Speck (9)",
+saltate: "🐷 Grüne Bohnen mit Speck und Speckwürfeln sautiert",
  mista: "Gemischter Salat (Kopfsalat, roter Radicchio aus Chioggia, Karotten, Tomaten, Kohl)",
  menu_completo: "Vollständiges Menü",
  primo_contorno: "Vorspeise + Beilage",
@@ -266,21 +270,22 @@ const translations = {
  allergens: "Allergene: 1 Gluten, 2 Krebstiere, 3 Eier, 4 Fisch, 5 Erdnüsse, 6 Soja, 7 Milch, 8 Nüsse, 9 Sellerie, 10 Senf, 11 Sesam, 12 Sulfite, 13 Lupinen, 14 Schalentiere"
 },
 sq: {
-  menu_today: "Menyja e Sotme 29/10/25",
+  menu_today: "Menyja e Sotme 31/10/25",
   water_coffee: "💧 Ujë dhe ☕ Kafe të përfshirë",
   primis: "🥟Pjatë e parë",
-  riso_freddo: "Tortelloni me ragù viçi (1,3,6,7,9)",
-  pasta_ragu: "Krep me spinaq dhe rikota (1,3,6,7)",
-  pasta_ricotta: "Makarona me domate, borzilok dhe mocarela (1,6,7,9)",
+  riso_freddo: "🐷 Makarona “alla boscaiola” (1,6,7) (me pana, proshutë të zier, bizele dhe kërpudha*)*",
+  pasta_ragu: "🐷 Makarona me ragù të ftohtë djegës (1,6,8 FISTEK,9,12)",
+  pasta_ricotta: "Gnocchi me kallamarë* dhe domate qershi (1,3,4,6,12,14)",
 
   secondis: "🍖Pjatë e dytë",
   piastra: "Zgjedhje në Grill: Pulë / Mish derri🐷 / Salsiçe🐷 / Djathë (mund të përmbajë vezë dhe qumësht)",
-  carpaccio: "Kofshë pule e zier ngadalë (9)",
-  filetto: "Strudel me gjeldeti, perime dhe mocarela (1,3,6,7)",
+  carpaccio: "🐷 Shkopinj mishi të përzier (3,7)",
+  filetto: "Fileto peshku perch* e pjekur në furrë (1,4)",
 
   contorni: "🍟SHTESA",
-  zucchine: "Patate të pjekura në furrë",
-  crocchette: "Bizelë*",
+  zucchine: "Radikio Trevizo i pjekur në zgarë",
+  crocchette: "🐷 Fasule të ziera me proshutë (9)",
+  saltate: "🐷 Bishtaja të skuqura me proshutë dhe speck",
   mista: "Sallatë mikse (marule, radikio e kuqe nga Chioggia, karota, domate, lakër)",
 
   menu_completo: "Menu e plotë",
@@ -291,21 +296,22 @@ sq: {
   allergens: "Alergjenët: 1 Gluten, 2 Kërpudha deti, 3 Vezë, 4 Peshk, 5 Kikirik, 6 Sojë, 7 Qumësht, 8 Arrë, 9 Selino, 10 Mustard, 11 Susam, 12 Sulfitë, 13 Lupinë, 14 Mollusqe"
 },
 ro: {
-  menu_today: "Meniul Zilei 29/10/25",
+  menu_today: "Meniul Zilei 31/10/25",
   water_coffee: "💧 Apă și ☕ Cafea incluse",
   primis: "🥟APERITIVE",
-  riso_freddo: "Tortelloni cu ragù de vită (1,3,6,7,9)",
-  pasta_ragu: " Clătită cu spanac și ricotta (1,3,6,7)",
-  pasta_ricotta: "Paste cu roșii, busuioc și mozzarella (1,6,7,9)",
+  riso_freddo: "🐷 Paste „alla boscaiola” (1,6,7) (cu smântână, șuncă fiartă, mazăre și ciuperci*)*",
+  pasta_ragu: " 🐷 Paste cu ragù de mezeluri picant (1,6,8 FISTIC,9,12)",
+  pasta_ricotta: "Gnocchi cu calamari* și roșii cherry (1,3,4,6,12,14)",
   
   secondis: "🍖FELURI PRINCIPALE",
   piastra: "Grătar la alegere: Pui / Porc🐷/ Cârnați🐷/ Brânză (poate conține ou și lapte)",
-  carpaccio: "Pulpa superioară de pui înăbușită (9)",
-  filetto: "Ștrudel cu curcan, legume și mozzarella (1,3,6,7)",
+  carpaccio: "🐷 Frigărui mixte din carne (3,7)",
+  filetto: "File de biban* la cuptor (1,4)",
   
   contorni: "🍟GARNITURI",
-  zucchine: "Cartofi la cuptor",
-  crocchette: " Mazăre*",
+  zucchine: "Andivă roșie Treviso la grătar",
+  crocchette: " 🐷 Fasole fiartă cu bacon (9)",
+  saltate: " 🐷 Fasole verde sotată cu bacon și speck",
   mista: "Salată mixtă (salată verde, radicchio roșu din Chioggia, morcovi, roșii, varză)",
 
   menu_completo: "Meniu complet",
