@@ -342,9 +342,75 @@ document.querySelectorAll('.lang-list span').forEach(btn => {
   });
 });
 </script>
+  <style>
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .popup-content {
+    background: rgb(230, 196, 133);
+    padding: 25px 35px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .popup-content h3 {
+    margin-top: 0;
+    color: #920d0d;
+  }
+  .popup-content p {
+    margin: 10px 0 0;
+    color: #000000;
+    font-size: 16px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: #ce1e1e;
+  }
+</style>
+
+<div class="popup" id="alertPopup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h3>Importante</h3>
+    <p>Si avvisano i nostri gentili clienti che domani, sabato 1° novembre, il PinUp sara chiuso.
+Potete chiudere questo avviso cliccando sulla X nera.Vi auguriamo un felice Halloween! 🎃</p>
+  </div>
+</div>
+
+<script>
+  
+  window.onload = function() {
+    document.getElementById("alertPopup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("alertPopup").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
+
 
 
 
