@@ -157,30 +157,7 @@ li { padding: 12px; margin-bottom: 10px; background: #faf4e5; border-radius: 8px
 
 </div>
 
-<script>
-const translations = {
 
-
- 
-};
-
-document.querySelector('.lang-toggle').addEventListener('click', function() {
-  const list = document.querySelector('.lang-list');
-  list.style.display = list.style.display === 'inline-block' ? 'none' : 'inline-block';
-});
-
-document.querySelectorAll('.lang-list span').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const lang = btn.dataset.lang;
-    document.querySelectorAll('[data-key]').forEach(el => {
-      const key = el.getAttribute('data-key');
-      if(translations[lang] && translations[lang][key]){
-        el.innerHTML = translations[lang][key];
-      }
-    });
-  });
-});
-</script>
 <style>
   .popup {
     position: fixed;
@@ -248,6 +225,7 @@ Potete chiudere questo avviso cliccando sulla X nera.Vi auguriamo un felice Hall
 
 </body>
 </html>
+
 
 
 
